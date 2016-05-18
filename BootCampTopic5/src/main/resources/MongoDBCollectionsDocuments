@@ -1,0 +1,603 @@
+db high_school
+
+db.Students.insert([
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	firstname: 'StudentName1',
+	lastname: 'StudentLastName1',
+	registrationnum: '0000',
+	dateofbirth: '19900218'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	firstname: 'StudentName2',
+	lastname: 'StudentLastName2',
+	registrationnum: '0001',
+	dateofbirth: '19900219'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	firstname: 'StudentName3',
+	lastname: 'StudentLastName3',
+	registrationnum: '0002',	
+	dateofbirth: '19900220'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	firstname: 'StudentName4',
+	lastname: 'StudentLastName4',
+	registrationnum: '0003',
+	dateofbirth: '19900221'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	firstname: 'StudentName5',
+	lastname: 'StudentLastName5',
+	registrationnum: '0004',
+	dateofbirth: '19900222'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	firstname: 'StudentName6',
+	lastname: 'StudentLastName6',
+	registrationnum: '0005',
+	dateofbirth: '19900223'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	firstname: 'StudentName7',
+	lastname: 'StudentLastName7',
+	registrationnum: '0006',
+	dateofbirth: '19900224'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	firstname: 'StudentName8',
+	lastname: 'StudentLastName8',
+	registrationnum: '0007',
+	dateofbirth: '19900225'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	firstname: 'StudentName9',
+	lastname: 'StudentLastName9',
+	registrationnum: '0008',
+	dateofbirth: '19900226'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	firstname: 'StudentName10',
+	lastname: 'StudentLastName10',
+	registrationnum: '0009',
+	dateofbirth: '19900227'
+}
+])
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.Teachers.insert([
+{
+	_id: ObjectId(),
+	idteacher: '1',
+	firstname: 'TeacherName1',
+	lastname: 'TeacherLastName1',
+	dateofbirth: '19601001'
+},
+{
+	_id: ObjectId(),
+	idteacher: '2',
+	firstname: 'TeacherName1',
+	lastname: 'TeacherLastName1',
+	dateofbirth: '19531101'
+},
+{
+	_id: ObjectId(),
+	idteacher: '3',
+	firstname: 'TeacherName1',
+	lastname: 'TeacherLastName1',
+	dateofbirth: '19700821'
+}
+])
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.Courses.insert([
+{
+	_id: ObjectId(),
+	idcourse: '1',
+	name: 'Maths',
+	idteacher: '1',
+	hoursaweek: '5'
+},
+{
+	_id: ObjectId(),
+	idcourse: '2',
+	name: 'Programming',
+	idteacher: '2',
+	hoursaweek: '3'
+},
+{
+	_id: ObjectId(),
+	idcourse: '3',
+	name: 'Physics',
+	idteacher: '3',
+	hoursaweek: '4'
+}
+])
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.Schedules.insert([
+{
+	_id: ObjectId(),
+	idcourse: '1',
+	dayofweek: '1',
+	starttime: '10:00',
+	endtime: '12:00'
+},
+{
+	_id: ObjectId(),
+	idcourse: '1',
+	dayofweek: '3',
+	starttime: '11:00',
+	endtime: '14:00'
+},
+{
+	_id: ObjectId(),
+	idcourse: '2',
+	dayofweek: '2',
+	starttime: '08:00',
+	endtime: '09:00'
+},
+{
+	_id: ObjectId(),
+	idcourse: '2',
+	dayofweek: '4',
+	starttime: '10:00',
+	endtime: '12:00'
+},
+{
+	_id: ObjectId(),
+	idcourse: '3',
+	dayofweek: '5',
+	starttime: '10:00',
+	endtime: '14:00'
+}
+])
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.Assistants.insert([
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	idcourse: '1'
+},
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	idcourse: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	idcourse: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	idcourse: '3'
+}
+])
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.ExamTypes.insert
+([
+{
+	_id: ObjectId(),
+	idexamtype: '1',
+	description: 'Exam 1'
+},
+{
+	_id: ObjectId(),
+	idexamtype: '2',
+	description: 'Exam 2'
+},
+{
+	_id: ObjectId(),
+	idexamtype: '3',
+	description: 'Exam 3'
+},
+{
+	_id: ObjectId(),
+	idexamtype: '4',
+	description: 'Final Exam'
+}
+])
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.Exams.insert
+([
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	idcourse: '1',
+	idexamtype '1',
+	note: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	idcourse: '1',
+	idexamtype '2',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	idcourse: '1',
+	idexamtype '3',
+	note: '6'
+},
+{
+	_id: ObjectId(),
+	idstudent: '4',
+	idcourse: '1',
+	idexamtype '4',
+	note: '8'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	idcourse: '1',
+	idexamtype '1',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	idcourse: '1',
+	idexamtype '2',
+	note: '6'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	idcourse: '1',
+	idexamtype '3',
+	note: '8'
+},
+{
+	_id: ObjectId(),
+	idstudent: '5',
+	idcourse: '1',
+	idexamtype '4',
+	note: '8'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '1',
+	idexamtype '1',
+	note: '9'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '1',
+	idexamtype '2',
+	note: '5'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '1',
+	idexamtype '3',
+	note: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '6',
+	idcourse: '1',
+	idexamtype '4',
+	note: '7'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	idcourse: '1',
+	idexamtype '1',
+	note: '5'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	idcourse: '1',
+	idexamtype '2',
+	note: '6'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	idcourse: '1',
+	idexamtype '3',
+	note: '9'
+},
+{
+	_id: ObjectId(),
+	idstudent: '7',
+	idcourse: '1',
+	idexamtype '4',
+	note: '10'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	idcourse: '1',
+	idexamtype '1',
+	note: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	idcourse: '1',
+	idexamtype '2',
+	note: '5'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	idcourse: '1',
+	idexamtype '3',
+	note: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '8',
+	idcourse: '1',
+	idexamtype '4',
+	note: '7'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	idcourse: '1',
+	idexamtype '1',
+	note: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	idcourse: '1',
+	idexamtype '2',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	idcourse: '1',
+	idexamtype '3',
+	note: '6'
+},
+{
+	_id: ObjectId(),
+	idstudent: '9',
+	idcourse: '1',
+	idexamtype '4',
+	note: '8'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	idcourse: '1',
+	idexamtype '1',
+	note: '5'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	idcourse: '1',
+	idexamtype '2',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	idcourse: '1',
+	idexamtype '3',
+	note: '7'
+},
+{
+	_id: ObjectId(),
+	idstudent: '10',
+	idcourse: '1',
+	idexamtype '4',
+	note: '5'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '1',
+	idexamtype '1',
+	note: '8'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '1',
+	idexamtype '2',
+	note: '9'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '1',
+	idexamtype '3',
+	note: '9'
+},
+{
+	_id: ObjectId(),
+	idstudent: '11',
+	idcourse: '1',
+	idexamtype '4',
+	note: '9'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	idcourse: '1',
+	idexamtype '1',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	idcourse: '1',
+	idexamtype '2',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	idcourse: '1',
+	idexamtype '3',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '12',
+	idcourse: '1',
+	idexamtype '4',
+	note: '4'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	idcourse: '1',
+	idexamtype '1',
+	note: '2'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	idcourse: '1',
+	idexamtype '2',
+	note: '3'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	idcourse: '1',
+	idexamtype '3',
+	note: '8'
+},
+{
+	_id: ObjectId(),
+	idstudent: '13',
+	idcourse: '1',
+	idexamtype '4',
+	note: '5'
+}
+])

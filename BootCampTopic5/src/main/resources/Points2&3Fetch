@@ -1,0 +1,13 @@
+Pto2
+db.Students.find
+({ 
+	"$where": "this.Students.idperson == this.Exams.idstudent"}).sort({
+			"Exams.notes": {$gt: 4}
+			});
+
+Pto3
+db.Courses.find
+({
+	"$where": "this.Courses.idteacher == this.Teachers.idperson"}).sort({
+			"Teachers.idperson": 1
+			});
